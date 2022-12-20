@@ -42,6 +42,7 @@ body {
     color: black;
     font-family: 'Open Sans';
 }
+
 /* техническая обертка для избегания горизонтального скрола */
 .wrapper {
     min-height: 100%;
@@ -104,7 +105,7 @@ body {
     height: fit-content;
 }
 
-/*----- НЕ РАБОТАЕТ------*/
+/*----- НЕ РАБОТАЕТ ДЕКОРАТИВНОЕ ПОДЧЕРКИВАНИЕ ПРИ НАВЕДЕНИИ------*/
 .menu__list {
     display: flex;
     width: 460px;
@@ -134,9 +135,12 @@ body {
     position: absolute;
     left: 0;
     bottom: -3px;
-    height: 2px; /* Высота линии */
-    background-color: #ffffff; /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    height: 2px;
+    /* Высота линии */
+    background-color: #ffffff;
+    /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
 }
 
 .menu__title_container {
@@ -150,7 +154,7 @@ body {
 
 .menu__title {
     width: 620px;
-    height:fit-content;
+    height: fit-content;
     padding: 0 1em 0 0;
     color: white;
     font-size: 2em;
@@ -166,6 +170,7 @@ body {
     margin: auto;
     z-index: 100;
 }
+
 /* -------РАЗДЕЛ MAIN------------- */
 .trends-container {
     margin-top: 3.75em;
@@ -257,7 +262,7 @@ body {
     line-height: 1.2;
 }
 
-.post-title > a:hover {
+.post-title>a:hover {
     color: #b59f5b;
     transition: color 0.5s;
 }
@@ -286,4 +291,84 @@ body {
 
 .trend4 {
     background-image: url('../images/trend4.jpg');
+}
+
+.page {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 62px;
+    color: #0f0d0e;
+}
+
+.posts {
+    width: 778px;
+}
+
+.main-text {
+    font-size: 0.9rem;
+    text-transform: none;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 61px;
+}
+
+.post:last-child {
+    margin-bottom: 0;
+}
+
+.post-image {
+    background-color: #ffffff;
+}
+
+.post-content {
+    margin-left: 30px;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags-item {
+    margin-right: 18px;
+    font-size: 0.87rem;
+    line-height: 1.2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #b59f5b;
+}
+
+.link-hover-black:hover {
+    color: #000;
+    transition: color 0.5s;
+}
+
+.post-meta {
+    display: flex;
+    flex-wrap: nowrap;
+    text-transform: none;
+}
+
+.post-date {
+    margin-right: 11px;
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.post-author {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.post-author:hover {
+    color: #b59f5b;
+    transition: color 0.5s;
 }
